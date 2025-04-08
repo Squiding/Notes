@@ -54,7 +54,9 @@ If you're faced with an NP-complete or NP-hard problem in practice, don't expect
 Hope this helps!
 
 Some other links: 
-[What is a plain English explanation of "Big O" notation?](https://stackoverflow.com/questions/1857244/what-are-the-differences-between-np-np-complete-and-np-hard?rq=1)
-[What are the differences between NP, NP-Complete and NP-Hard?](https://stackoverflow.com/questions/1857244/what-are-the-differences-between-np-np-complete-and-np-hard?rq=1)
-[What does O(log n) mean exactly?](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly?rq=1)
+- [What is a plain English explanation of "Big O" notation?](https://stackoverflow.com/questions/1857244/what-are-the-differences-between-np-np-complete-and-np-hard?rq=1)
+
+- [What are the differences between NP, NP-Complete and NP-Hard?](https://stackoverflow.com/questions/1857244/what-are-the-differences-between-np-np-complete-and-np-hard?rq=1)
+
+- [What does O(log n) mean exactly?](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly?rq=1)
 

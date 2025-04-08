@@ -3,7 +3,7 @@ This repository contains study notes on key topics in computer science and mathe
 
 ## 💻 Computational Method
 
-- [NP Problem](notes/Computational_Method_NP_Problem.md)
+- [NP Problem](Notes/Computational_methods/NP_Problem.md)
 
 ## 🤖 Machine Learning
 
