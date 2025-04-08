@@ -5,5 +5,9 @@ This repository contains study notes on key topics in computer science and mathe
 
 - [NP Problem](notes/Computational_Method_NP_Problem.md)
 
+## 🤖 Machine Learning
+
+- [Introduction to Machine Learning]()
+
 More topics will be added as the collection grows. Stay tuned!
 
