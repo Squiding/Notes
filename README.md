@@ -9,5 +9,9 @@ This repository contains study notes on key topics in computer science and mathe
 
 - [Introduction to Machine Learning]()
 
+## 💾 Coding
+
+- [Git Commands and SSH Configuration](Coding/git-commands.md)
+
 More topics will be added as the collection grows. Stay tuned!
 
