@@ -8,6 +8,7 @@ This repository contains study notes on key topics in computer science and mathe
 ## 🤖 Machine Learning
 
 - [Introduction to Machine Learning]()
+- [Book Recommendations](Machine_learning/book-recommendations.md)
 
 ## 🔌 ECE Fundamental
 
