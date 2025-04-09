@@ -17,7 +17,7 @@ Real-world systems (e.g., analog circuits, control systems, DSP) are input-outpu
 | Fourier | Continuous | \( t \in (-\infty, \infty) \) | \( F(j\omega) = \int_{-\infty}^{\infty} f(t)e^{-j\omega t} dt \) | \( e^{-j\omega t} \) | \( \omega \) | Frequency spectrum analysis |
 | Z | Discrete | \( n \geq 0 \) | \( X(z) = \sum_{n=0}^\infty x[n] z^{-n} \) | \( z^{-n} \) | \( z = re^{j\omega} \) | DSP & digital filters |
 
-🌀 Fourier Transform is a special case of Laplace Transform when \( \sigma = 0 \)
+🌀 Fourier Transform is a special case of Laplace Transform when \( \sigma = 0 \)  
 🌀 Discrete Fourier Transform is a special case of Z-transform on the unit circle \( z = e^{j\omega} \)
 
 ---
@@ -44,7 +44,7 @@ Assume sinusoidal input:
 v_{in}(t) = V_0 \cos(\omega t) \Rightarrow H(j\omega)
 \]
 
-- Capacitor: \( \frac{1}{j\omega C} \)
+- Capacitor: \( \frac{1}{j\omega C} \)  
 - Inductor: \( j\omega L \)
 
 Useful for **Bode plots, resonance, filtering**
@@ -98,4 +98,3 @@ Used for **digital simulation, embedded control**
 ---
 
 Let me know if you want visual illustrations (e.g. s-plane or z-plane plots), or RLC simulations using Python or MATLAB.
-
