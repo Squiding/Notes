@@ -11,11 +11,11 @@ This repository contains study notes on key topics in computer science and mathe
 
 ## 🔌 ECE Fundamental
 
-- [ECE Fundamental Notes](ECE_fundamental/)
+- [Unified View of Laplace Transform, Fourier Transform, Z-Transform, and the RLC Circuit](ECE_fundamental/Unified_View_of_Transforms.md)
 
 ## 💾 Coding
 
-- [Git Commands and SSH Configuration](Coding/git-commands.md)
+- [Git Commands](Coding/git-commands.md)
 
 More topics will be added as the collection grows. Stay tuned!
 
