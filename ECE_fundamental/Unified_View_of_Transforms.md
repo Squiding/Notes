@@ -1,28 +1,47 @@
-# 📘 Unified View of Laplace Transform, Fourier Transform, Z-Transform, and the RLC Circuit
+# Unified View of Laplace Transform, Fourier Transform, Z-Transform, and the RLC Circuit
 
-## 🔰 Motivation: Why These Transforms?
-Real-world systems (e.g., analog circuits, control systems, DSP) are input-output systems governed by differential or difference equations. Solving these equations directly is hard, especially with initial conditions. So, we apply transformations:
-
-- **Laplace Transform**: For continuous systems, including transient and steady-state.
-- **Fourier Transform**: For continuous-time frequency analysis.
-- **Z-Transform**: For discrete-time systems.
-
----
-
-## 🧩 Overview of the Three Major Transforms
+## Overview of the Three Major Transforms
 
 | Transform | Domain | Time Range | Definition | Kernel | Variable | Use Case |
-|----------|--------|------------|------------|--------|----------|----------|
-| Laplace | Continuous | \( t \geq 0 \) | \( F(s) = \int_0^\infty f(t)e^{-st}dt \) | \( e^{-st} \) | \( s = \sigma + j\omega \) | Unified transient and frequency response |
-| Fourier | Continuous | \( t \in (-\infty, \infty) \) | \( F(j\omega) = \int_{-\infty}^{\infty} f(t)e^{-j\omega t} dt \) | \( e^{-j\omega t} \) | \( \omega \) | Frequency spectrum analysis |
-| Z | Discrete | \( n \geq 0 \) | \( X(z) = \sum_{n=0}^\infty x[n] z^{-n} \) | \( z^{-n} \) | \( z = re^{j\omega} \) | DSP & digital filters |
+|-----------|--------|------------|------------|---------|----------|-----------|
+| Laplace | Continuous | t ≥ 0 | <img src="https://latex.codecogs.com/svg.latex?F(s)=\int_0^\infty%20f(t)e^{-st}dt"/> | <img src="https://latex.codecogs.com/svg.latex?e^{-st}"/> | <img src="https://latex.codecogs.com/svg.latex?s=\sigma+j\omega"/> | Unified transient and frequency response |
+| Fourier | Continuous | -∞ < t < ∞ | <img src="https://latex.codecogs.com/svg.latex?F(j\omega)=\int_{-\infty}^{\infty}f(t)e^{-j\omega%20t}dt"/> | <img src="https://latex.codecogs.com/svg.latex?e^{-j\omega%20t}"/> | <img src="https://latex.codecogs.com/svg.latex?j\omega"/> | Frequency spectrum analysis |
+| Z | Discrete | n ≥ 0 | <img src="https://latex.codecogs.com/svg.latex?X(z)=\sum_{n=0}^{\infty}x[n]z^{-n}"/> | <img src="https://latex.codecogs.com/svg.latex?z^{-n}"/> | <img src="https://latex.codecogs.com/svg.latex?z=re^{j\omega}"/> | DSP & digital filters |
 
-🌀 Fourier Transform is a special case of Laplace Transform when \( \sigma = 0 \)  
-🌀 Discrete Fourier Transform is a special case of Z-transform on the unit circle \( z = e^{j\omega} \)
+**Key Relationships:**
+- Fourier Transform is a special case of Laplace Transform when <img src="https://latex.codecogs.com/svg.latex?\sigma=0"/>
+- Discrete Fourier Transform is a special case of Z-transform on the unit circle (<img src="https://latex.codecogs.com/svg.latex?z=e^{j\omega}"/>)
 
----
+## Introduction
 
-## ⚡ RLC Circuit Under These Transforms
+This document provides a unified perspective on the fundamental transforms in electrical engineering and their relationship with RLC circuits.
+
+## Table of Contents
+1. [Laplace Transform](#laplace-transform)
+2. [Fourier Transform](#fourier-transform)
+3. [Z-Transform](#z-transform)
+4. [RLC Circuit Analysis](#rlc-circuit-analysis)
+5. [Connections and Relationships](#connections-and-relationships)
+
+## Laplace Transform
+
+The Laplace transform is defined as:
+
+<img src="https://latex.codecogs.com/svg.latex?F(s)=\int_0^\infty%20f(t)e^{-st}dt"/>
+
+## Fourier Transform
+
+The Fourier transform is defined as:
+
+<img src="https://latex.codecogs.com/svg.latex?F(j\omega)=\int_{-\infty}^{\infty}f(t)e^{-j\omega%20t}dt"/>
+
+## Z-Transform
+
+The Z-transform is defined as:
+
+<img src="https://latex.codecogs.com/svg.latex?X(z)=\sum_{n=0}^{\infty}x[n]z^{-n}"/>
+
+## RLC Circuit Analysis
 
 ### RLC Circuit (Series):
 \[
@@ -60,41 +79,6 @@ V_{in}(z) = I(z) \cdot Z_{equiv}(z)
 \]
 Used for **digital simulation, embedded control**
 
----
+## Connections and Relationships
 
-## 🎯 General System Response Comparison
-
-| Domain | Time Domain | Transform | Convolution | Algebraic Form |
-|--------|-------------|-----------|-------------|----------------|
-| Continuous | \( y(t) = h(t) * x(t) \) | Laplace/Fourier | \( y(t) = \int h(\tau)x(t-\tau) d\tau \) | \( Y(s) = H(s)X(s) \) |
-| Discrete | \( y[n] = h[n] * x[n] \) | Z-Transform | \( y[n] = \sum h[k]x[n-k] \) | \( Y(z) = H(z)X(z) \) |
-
----
-
-## 🔧 Interpreting the Frequency Variables
-
-### ✅ Continuous:
-- \( s = \sigma + j\omega \)
-  - \( \omega \): Oscillation frequency
-  - \( \sigma \): Exponential decay/growth
-  - **Stability**: Poles must lie in the left-half plane (\( \sigma < 0 \))
-
-### ✅ Discrete:
-- \( z = r e^{j\omega} \)
-  - \( r \): Magnitude (stability if \( r < 1 \))
-  - \( \omega \): Digital frequency
-  - **Stability**: Poles inside unit circle
-
----
-
-## 🧠 Summary Table: Transform Domain View
-
-| Domain | Time Function | Kernel | Frequency View | Stability Criterion |
-|--------|---------------|--------|----------------|----------------------|
-| Laplace | \( f(t) \) | \( e^{-st} \) | Set \( s = j\omega \) | Poles in LHP |
-| Fourier | \( f(t) \) | \( e^{-j\omega t} \) | Entire real axis | Signal must be energy bounded |
-| Z | \( x[n] \) | \( z^{-n} \) | \( z = e^{j\omega} \) | Poles in unit circle |
-
----
-
-Let me know if you want visual illustrations (e.g. s-plane or z-plane plots), or RLC simulations using Python or MATLAB.
+## References
