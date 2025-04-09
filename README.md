@@ -16,6 +16,7 @@ This repository contains study notes on key topics in computer science and mathe
 ## 💾 Coding
 
 - [Git Commands](Coding/git-commands.md)
+- [Displaying Math in GitHub Markdown](Coding/markdown-math-guide.md)
 
 More topics will be added as the collection grows. Stay tuned!
 
