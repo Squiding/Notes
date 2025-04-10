@@ -1,5 +1,7 @@
 # Computational Method: NP Problem
 
+> This content is based on the answer by [templatetypedef](https://stackoverflow.com/users/501557/templatetypedef) on Stack Overflow: [What are NP and NP-complete problems?](https://stackoverflow.com/questions/6916162/what-are-np-and-np-complete-problems)
+
 There are many ways of thinking about NP and NP-completeness. I'll start with a definition of NP, then will talk about NP-hardness, and finally NP-completeness.
 
 ---
@@ -10,7 +12,7 @@ A problem is in **NP** if it is a decision problem where a correct answer can be
 
 The name **nondeterministic polynomial** comes from an alternate view: imagine a magical algorithm that can *guess* the correct answer in polynomial time. In our weights example, such an algorithm would guess the correct subset, check if it sums to *k*, and return the result. If it's always guaranteed to make the correct guess, then it behaves like a polynomial-time verifier.
 
-One of the most important open questions in computer science is whether every problem in NP is also in P. That is, if we can verify answers efficiently, can we also *find* them efficiently? We know P is a subset of NP, but we don’t know if NP ⊆ P.
+One of the most important open questions in computer science is whether every problem in NP is also in P. That is, if we can verify answers efficiently, can we also *find* them efficiently? We know P is a subset of NP, but we don't know if NP ⊆ P.
 
 ---
 
@@ -34,7 +36,7 @@ Examples:
 
 ### NP-Hard Problems
 
-Some problems are **NP-hard**, meaning they are at least as hard as any problem in NP, but they aren’t necessarily in NP themselves (e.g., they might not be decision problems).
+Some problems are **NP-hard**, meaning they are at least as hard as any problem in NP, but they aren't necessarily in NP themselves (e.g., they might not be decision problems).
 
 ---
 
